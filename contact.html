@@ -3,7 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./contact.css" />
+    <title>Barites Veterans Ranch</title>
   </head>
-  <body></body>
+  <body>
+    <header class="sticky">
+      <nav class="navbar" id="navbar">
+        <h1 class="logo">BARITES VETERANS RANCH</h1>
+        <ul class="navLinks">
+          <li class="link">
+            <a href="index.html" to="/" id="home">
+              Our Mission
+            </a>
+          </li>
+          <li class="link">
+            <a href="herd.html" id="herd">
+              The Herd
+            </a>
+          </li>
+          <li class="link">
+            <a href="story.html" id="story">
+              Our Story
+            </a>
+          </li>
+          <li class="link">
+            <a href="contact.html" id="contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="view">
+      <div class="contact container">
+        <h1>Drop Us A Line!</h1>
+        <form>
+          <ul class="flexContainer">
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" id="name" required placeholder="Enter Name" />
+            </li>
+            <li>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                required
+                placeholder="Enter Email"
+              />
+            </li>
+            <li>
+              <label for="message">Message:</label>
+              <textarea
+                required
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                value="{values.message}"
+                onChange="{handleChange}"
+              ></textarea>
+            </li>
+            <li class="btn">
+              <input type="submit" class="button" value="Send Message" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>

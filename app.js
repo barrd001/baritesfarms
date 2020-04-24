@@ -1,5 +1,3 @@
-import moment from "moment";
-
 let livestock = [
   {
     name: "Norman",
@@ -216,7 +214,7 @@ let cards = livestock.map((livestock, index) => {
           <h1 className='cardName'>${livestock.name}</h1>
           <ul className='info'>
             <li>Born: ${livestock.birthdate}</li>
-            <li>Age: {moment(livestock.birthdate).fromNow(true)}</li>
+            <li>Age: ${moment(livestock.birthdate).fromNow(true)}</li>
             <li>Height: ${livestock.height} </li>
             <li>Weight: ${livestock.weight} </li>
             <li>Breed: ${livestock.breed} </li>

@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: url("./Images/olafsky.jpg") no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #916c3b;
+  width: 100vw;
+  /* margin-bottom: 5vh; */
+  z-index: 100;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  color: white;
+  height: 11vh;
+}
+
+.navLinks {
+  display: flex;
+  flex-grow: 1;
+}
+
+.logo {
+  display: flex;
+  flex-grow: 3;
+  padding-left: 2em;
+  font-weight: 900;
+  font-size: 2rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.link {
+  display: flex;
+  flex-grow: 1;
+}
+
+a:link,
+a:visited {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  display: inline-block;
+  font-size: 1rem;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+  transition-duration: 0.4s;
+  /* transform: rotateZ(35deg); */
+}
+
+a:hover,
+a:active {
+  /* transform: rotateZ(0deg); */
+  font-size: 2rem;
+}
+
+footer {
+  margin-top: 10vh;
+  grid-column: 1 / span 5;
+  grid-row: 27 / 28;
+  background-color: #916c3b;
+  height: 10vh;
+  color: white;
+  align-self: center;
+  padding: 10px;
+}
+
+.view {
+  margin: 10vh auto;
+  height: 50vh;
+  width: 50vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  grid-template-rows: 10vh;
+}
+
+.container {
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  justify-self: center;
+  align-self: center;
+  padding-bottom: 20vh;
+  /* padding-left: 5vh; */
+}
+
+.card {
+  width: 350px;
+  margin-left: 1em;
+  margin-top: 1em;
+  transition: 0.3s;
+}
+
+.meet {
+  grid-column: 1 / span 4;
+  font-size: 7rem;
+  justify-self: center;
+  color: #916c3b;
+  font-weight: 300;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+
+/* Add some padding inside the card container */
+
+.cardImage {
+  width: 375px;
+  height: 375px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.flipcard {
+  position: relative;
+  width: 375px;
+  height: 375px;
+  padding: 5px 5px;
+  margin: 3vh;
+  perspective: 1000px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.card:hover .flipcard {
+  transform: rotateY(180deg);
+}
+
+.flipcardFront,
+.flipcardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flipcardFront {
+  background-color: #bbb;
+  color: black;
+}
+
+.flipcardBack {
+  background-color: #916c3b;
+  padding: 1vh;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.cardName {
+  padding-top: 1vh;
+}
+
+.info {
+  padding-top: 1vh;
+  font-weight: 800;
+}
+
+.info li {
+  padding: 1px;
+}

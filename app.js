@@ -198,6 +198,58 @@ let livestock = [
       "Ivy is a 2 day old black Belted Galloway heifer out of Croakers Crossing's Petra and Hank.  She is a full sibling of Poppy",
     image: "./Images/ivy.jpg",
   },
+  {
+    name: "Mama",
+    birthdate: "December 20, 2014",
+    age: "2 days",
+    height: "39",
+    weight: "unk",
+    breed: "Longhorn X Highland",
+    chondro: "No",
+    temperament: "friendly",
+    dam: "Unk",
+    sire: "Unk",
+    sex: "cow",
+    color: "black/white brindle",
+    polled: "No",
+    bio: "Mama ",
+    image: "./Images/mama.jpg",
+  },
+  {
+    name: "Sundae",
+    birthdate: "April 20, 2017",
+    age: "2 days",
+    height: "36",
+    weight: "unk",
+    breed: "Longhorn X Highland",
+    chondro: "No",
+    temperament: "friendly",
+    dam: "Mama",
+    sire: "Unk",
+    sex: "heifer",
+    color: "black/white brindle",
+    polled: "No",
+    bio: "",
+    image: "./Images/sundae.jpg",
+  },
+  {
+    name: "Dottie",
+    birthdate: "February 8, 2019",
+    age: "2 days",
+    height: "35",
+    weight: "unk",
+    breed: "25% Zebu, 25% Dexter, 50% Lowline Angus",
+    chondro: "No",
+    temperament: "friendly",
+    dam: "unk",
+    sire: "CC Hank",
+    sex: "heifer",
+    color: "black",
+    polled: "homozygous",
+    bio:
+      "Dottie is a 1 year old, micro-miniature lowline/zebu/dexter cross heifer",
+    image: "./Images/dottie.jpg",
+  },
 ];
 console.log(livestock);
 
@@ -215,8 +267,8 @@ let cards = livestock.map((livestock, index) => {
           <ul class='info'>
             <li>Born: ${livestock.birthdate}</li>
             <li>Age: ${moment(livestock.birthdate).fromNow(true)}</li>
-            <li>Height: ${livestock.height} </li>
-            <li>Weight: ${livestock.weight} </li>
+            <li>Height: ${livestock.height} inches </li>
+            <li>Weight: ${livestock.weight} lbs </li>
             <li>Breed: ${livestock.breed} </li>
             <li>Chondro: ${livestock.chondro} </li>
 

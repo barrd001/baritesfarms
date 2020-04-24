@@ -181,7 +181,6 @@ footer {
 
 .flipcardBack {
   background-color: #916c3b;
-  padding: 1vh;
   color: white;
   transform: rotateY(180deg);
 }

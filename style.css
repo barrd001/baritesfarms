@@ -244,3 +244,20 @@ h4 {
   width: 30vw;
   justify-self: left;
 }
+
+.image-container {
+  padding: 5em;
+  background: white;
+  width: 70vw;
+  margin: 0 auto 30vh;
+  text-align: center;
+}
+
+.pasture {
+  margin: 0 auto;
+  padding: 1em;
+  width: 30vw;
+  height: 35vh;
+  object-fit: cover;
+  border-radius: 5px;
+}

@@ -104,34 +104,31 @@ footer {
 
 .view {
   margin: 10vh auto;
-  height: 50vh;
-  width: 50vw;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
-  grid-template-rows: 10vh;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
 }
 
 .container {
   background: white;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
-  justify-self: center;
-  align-self: center;
   padding-bottom: 20vh;
-  /* padding-left: 5vh; */
+  text-align: center;
+  padding-right: 5em;
 }
 
 .card {
+  display: inline-block;
   width: 350px;
-  margin-left: 1em;
-  margin-top: 1em;
+  margin: 2em;
+  margin-top: 2em;
   transition: 0.3s;
 }
 
 .meet {
-  grid-column: 1 / span 4;
+  display: inline-block;
+  margin: 0 auto;
   font-size: 7rem;
-  justify-self: center;
+  /* justify-self: center; */
   color: #916c3b;
   font-weight: 300;
   margin-top: 5vh;

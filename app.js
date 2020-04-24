@@ -204,15 +204,15 @@ console.log(livestock);
 let card = document.getElementById("cards");
 
 let cards = livestock.map((livestock, index) => {
-  return `<div className='card' id='card' key=${index}>
-      <div className='flipcard' id='flipcard'>
-        <div className='flipcardFront'>
-          <img className='cardImage' src=${livestock.image} alt='' />
+  return `<div class='card' key=${index}>
+      <div class='flipcard' id='flipcard'>
+        <div class='flipcardFront'>
+          <img class='cardImage' src=${livestock.image} alt='' />
           <h2>${livestock.name}</h2>
         </div>
-        <div className='flipcardBack'>
-          <h1 className='cardName'>${livestock.name}</h1>
-          <ul className='info'>
+        <div class='flipcardBack'>
+          <h1 class='cardName'>${livestock.name}</h1>
+          <ul class='info'>
             <li>Born: ${livestock.birthdate}</li>
             <li>Age: ${moment(livestock.birthdate).fromNow(true)}</li>
             <li>Height: ${livestock.height} </li>

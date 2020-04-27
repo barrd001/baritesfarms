@@ -129,7 +129,7 @@ h3 {
   padding: 2vh;
   text-shadow: 1px 1px 1px black;
   font-weight: 300;
-  height: 89vh;
+  height: 70vh;
   width: 70vw;
   margin: 15vh auto;
 }
@@ -173,9 +173,11 @@ footer {
     color: #916c3b;
     text-shadow: none;
     font-weight: 1000;
-    font-size: 10vw;
-    height: 10vh;
-    margin: 20vh auto;
+    font-size: 13vw;
+    height: 50vh;
+    margin: 30vh auto;
+    padding: 9;
+    width: 100%;
   }
 
   h3 {

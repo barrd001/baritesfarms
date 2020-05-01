@@ -115,6 +115,10 @@ h3 {
   width: 70vw;
 }
 
+.soul {
+  margin-bottom: 5vh;
+}
+
 .view {
   margin-top: 10vh;
   height: 100vh;
@@ -132,6 +136,14 @@ h3 {
   height: 70vh;
   width: 70vw;
   margin: 15vh auto;
+}
+
+section {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* margin: 0 auto; */
+  padding: 5vw;
+  justify-content: center;
 }
 
 .image-container {
@@ -156,6 +168,16 @@ footer {
   height: 10vh;
   color: white;
   padding: 10px;
+}
+
+h2 {
+  display: inline-block;
+}
+
+.fvc {
+  display: inline-block;
+  height: 8vh;
+  width: auto;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768) {

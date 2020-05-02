@@ -139,9 +139,7 @@ h3 {
 }
 
 section {
-  display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
-  /* margin: 0 auto; */
+  display: flex;
   padding: 5vw;
   justify-content: center;
 }
@@ -172,6 +170,7 @@ footer {
 
 h2 {
   display: inline-block;
+  padding-right: 2vw;
 }
 
 .fvc {

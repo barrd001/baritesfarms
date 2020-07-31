@@ -68,7 +68,7 @@ nav {
   font-family: "Montserrat", sans-serif;
 }
 
-.link {
+li.link {
   display: flex;
   flex-grow: 1;
 }
@@ -84,11 +84,17 @@ a:visited {
   color: white;
   padding: 1em;
   transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
 }
 
-a:hover,
-a:active {
+a.link:hover,
+a.link:active {
   font-size: 2rem;
+}
+
+a.fvc:hover,
+a.fvc:active {
+  transform: rotateZ(35deg);
 }
 
 h3 {
@@ -125,7 +131,7 @@ h3 {
   width: 100vw;
 }
 
-.cvf {
+.motto {
   font-size: 7rem;
   z-index: 2;
   text-align: center;
@@ -138,10 +144,10 @@ h3 {
   margin: 15vh auto;
 }
 
-section {
-  display: flex;
-  padding: 5vw;
-  justify-content: center;
+.fb-page {
+  margin-top: 15vh;
+  margin-left: 37vw;
+  margin-bottom: 15vh;
 }
 
 .image-container {
@@ -165,7 +171,8 @@ footer {
   background-color: #916c3b;
   height: 10vh;
   color: white;
-  padding: 10px;
+  padding-bottom: 11vh;
+  text-align: justify;
 }
 
 h2 {
@@ -179,9 +186,20 @@ h2 {
   width: auto;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 768) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
   body {
     background: url("./Images/olafsky.jpg") no-repeat center center fixed;
+  }
+
+  .logo {
+    display: flex;
+    flex-grow: 3;
+    padding-top: 0.5em;
+    padding-left: 2em;
+    font-weight: 900;
+    font-size: 1rem;
+    color: white;
+    font-family: "Montserrat", sans-serif;
   }
 }
 
@@ -190,7 +208,18 @@ h2 {
     background: white;
   }
 
-  .cvf {
+  .logo {
+    display: flex;
+    flex-grow: 3;
+    padding-top: 0.5em;
+    padding-left: 2em;
+    font-weight: 900;
+    font-size: 1rem;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .motto {
     color: #916c3b;
     text-shadow: none;
     font-weight: 1000;

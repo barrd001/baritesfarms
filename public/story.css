@@ -116,7 +116,7 @@ nav {
   font-family: "Montserrat", sans-serif;
 }
 
-.link {
+li.link {
   display: flex;
   flex-grow: 1;
 }
@@ -132,22 +132,34 @@ a:visited {
   color: white;
   padding: 1em;
   transition-duration: 0.4s;
-  /* transform: rotateZ(35deg); */
+  transition-timing-function: ease-in-out;
 }
 
-a:hover,
-a:active {
-  /* transform: rotateZ(0deg); */
+a.link:hover,
+a.link:active {
   font-size: 2rem;
 }
 
+a.fvc:hover,
+a.fvc:active {
+  transform: rotateZ(35deg);
+}
+
 footer {
-  margin-top: 10vh;
-  grid-column: 1 / span 5;
-  grid-row: 27 / 28;
   background-color: #916c3b;
   height: 10vh;
   color: white;
-  align-self: center;
-  padding: 10px;
+  padding-bottom: 11vh;
+  text-align: justify;
+}
+
+h2 {
+  display: inline-block;
+  padding-right: 2vw;
+}
+
+.fvc {
+  display: inline-block;
+  height: 8vh;
+  width: auto;
 }

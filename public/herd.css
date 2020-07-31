@@ -17,6 +17,7 @@ body {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: block;
 }
 
 code {
@@ -93,14 +94,19 @@ a:active {
 }
 
 footer {
+  display: block;
   margin-top: 10vh;
-  grid-column: 1 / span 5;
-  grid-row: 27 / 28;
+  /* position: absolute; */
   background-color: #916c3b;
   height: 10vh;
   color: white;
-  align-self: center;
+  bottom: 0;
   padding: 10px;
+}
+
+h2 {
+  display: inline-block;
+  padding-right: 2vw;
 }
 
 .view {
@@ -197,4 +203,10 @@ footer {
 
 .info li {
   padding: 1px;
+}
+
+.fvc {
+  display: inline-block;
+  height: 8vh;
+  width: auto;
 }

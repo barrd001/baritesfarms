@@ -94,19 +94,16 @@ a:active {
 }
 
 footer {
-  display: block;
-  margin-top: 10vh;
-  /* position: absolute; */
   background-color: #916c3b;
   height: 10vh;
   color: white;
-  bottom: 0;
-  padding: 10px;
+  padding-bottom: 50px;
 }
 
 h2 {
-  display: inline-block;
-  padding-right: 2vw;
+  display: inline;
+  text-align: center;
+  /* padding-right: 2vw; */
 }
 
 .view {

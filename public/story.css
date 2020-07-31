@@ -24,7 +24,7 @@ code {
 }
 
 .view {
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
   height: 100vh;
   width: 100vw;
   display: grid;
@@ -34,9 +34,9 @@ code {
 
 .container {
   grid-column: 1 / span 7;
-  grid-row: 1 / 27;
+  grid-row: 1 / span 1;
   width: 100vw;
-  margin-top: 0;
+  margin-top: 10vh;
   /* justify-self: center;
   align-self: center; */
 }
@@ -67,12 +67,12 @@ h4 {
 .p1 {
   font-size: 2rem;
   grid-column: 1 / 2;
-  grid-row: 1 / span 5;
+  grid-row: 1 / 2;
   border-radius: 10px;
   padding: 3vh;
   margin: 15vw;
   width: 30vw;
-  justify-self: left;
+  /* justify-self: left; */
 }
 .navbar {
   display: flex;
@@ -139,17 +139,18 @@ a.link:hover,
 a.link:active {
   font-size: 2rem;
 }
-
+/* 
 a.fvc:hover,
 a.fvc:active {
   transform: rotateZ(35deg);
-}
+} */
 
 footer {
   background-color: #916c3b;
   height: 10vh;
   color: white;
   padding-bottom: 11vh;
+  margin-bottom: 0;
   text-align: justify;
 }
 

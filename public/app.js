@@ -170,14 +170,14 @@ let livestock = [
     height: "33.5",
     weight: "254",
     breed: "Belted Galloway",
-    chondro: "No",
+    chondro: "Yes",
     temperament: "friendly",
     dam: "CC Petra",
     sire: "CC Hank",
     sex: "heifer",
     color: "black",
     bio:
-      "Poppy is a 10 month old black belted Galloway heifer out of Croakers Crossing's Petra and Hank.  She is a full sibling of Ivy",
+      "Poppy is a old black belted Galloway heifer out of Croakers Crossing's Petra and Hank.  She is a full sibling of Ivy",
     image: "./Images/poppy.jpg",
   },
   {

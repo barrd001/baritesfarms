@@ -337,8 +337,8 @@ let livestock = [
     color: "black",
     polled: "homozygous",
     bio:
-      "Freda is a Lowline, White Park cross out of Buttercup and CC Hank",
-    image: "",
+      "Frida is a Lowline, White Park cross out of Buttercup and CC Hank",
+    image: "./Images/frida.jpg",
   },
   {
     name: "Banana Split",

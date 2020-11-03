@@ -375,7 +375,7 @@ let livestock = [
     bio:
       "Flo is a Club Calf: Maine Anjou cross",
     image: "./Images/flo.jpg",
-  },
+  }
 ];
 console.log(livestock);
 

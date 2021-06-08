@@ -365,7 +365,7 @@ let livestock = [
     height: "40",
     weight: "364 lbs",
     breed: "Club Calf, Maine Anjou cross",
-    chondro: "",
+    chondro: "No",
     temperament: "friendly",
     dam: "unk",
     sire: "unk",
@@ -375,6 +375,24 @@ let livestock = [
     bio:
       "Flo is a Club Calf: Maine Anjou cross",
     image: "./Images/flo.jpg",
+  },
+  {
+    name: "BVR Magson "'"Mr"'" Brown",
+    birthdate: "May 24, 2021",
+    age: "1 mo",
+    height: "25",
+    weight: "60 lbs",
+    breed: "Jersey",
+    chondro: "No",
+    temperament: "friendly",
+    dam: "RJ Maggie Little Doll",
+    sire: "RR Mason",
+    sex: "Bull",
+    color: "Fawn",
+    polled: "homozygous",
+    bio:
+      "BVR Magson Brown is a Jersey Bull out of RJ Maggie Little Doll and RR Mason",
+    image: "./Images/magson.jpg",
   }
 ];
 console.log(livestock);
